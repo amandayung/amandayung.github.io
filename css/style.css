@@ -1,0 +1,135 @@
+
+html. body {
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+p, div {
+	font-family: 'Nunito Sans', sans-serif;	
+	font-size: 1.05em;
+}
+
+h3, h4 {
+	font-weight: bold;
+}
+
+/*.navbar-default {
+	background-color: #bfe7e3;
+	border-color: #a0d2ca;
+}*/
+
+.navbar-default .navbar-nav>li>a {
+	font-family: 'Rubik', sans-serif;
+}
+
+.navbar-brand {
+	padding-left: 0;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+/*.navbar-default .navbar-brand {
+	color: #2b4240;
+}*/
+
+.content {
+	padding-left: 20%;
+	padding-right: 20%;
+	margin: auto;
+
+}
+
+.selected-page {
+	font-weight: bold;
+	color: #2b4240;
+}
+
+.nav .active a {
+	background-color: transparent !important;
+	font-weight: bold;
+	color: #000000 !important;
+}
+
+.preview {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.preview-title {
+	font-weight: 900;
+	font-size: 1.2em;
+	text-align: center;
+	margin-bottom: 1.5em;
+	margin-top: 0.25em;
+}
+
+.lab-logo {
+	margin-bottom: 0.5em;
+}
+
+.lab-title {
+	font-weight: 900;
+}
+
+.lab-subtitle {
+	font-size: 0.8em;
+	color: #777;
+}
+
+/*.flex-grid {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: flex;
+ 	flex-flow: row wrap;
+  	justify-content: flex-start;
+}*/
+
+
+/*.preview-item {
+	width: 300px;
+	height: 300px;
+}*/
+
+/*.preview-item img {
+	border: 1px solid #333;
+	border-radius: 20px;
+}*/
+
+/*.preview-item p {
+	width: 250px;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: center;
+}*/
+
+.video {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+margin-top: 2em;
+margin-bottom: 2em;
+}
+ 
+.video iframe,
+.video object,
+.video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.project-specs {
+	font-size: 0.9em;
+	color: #777;
+	margin-bottom: 1.5em;
+}

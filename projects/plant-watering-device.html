@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+  <title>Amanda Yung</title>
+
+  <!-- styling -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700,900|Nunito+Sans:400,700,900" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+
+</head>
+
+<body>
+ <!-- navigation -->
+ <nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="../index.html"><strong>Amanda Yung</strong></a>
+    </div>
+
+    <div class="navbar-collapse collapse" id="menu">
+      <ul class="nav navbar-nav navbar-right">
+        <li  class="active"><a href="../projects.html">Projects</a></li>
+        <li><a href="../cv.html">CV</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h3>Plant Watering Device</h3>
+  <p><em>IoT Device Prototype</em></p>
+
+  <div class="project-specs">
+
+    <p>
+      <strong>Software</strong>
+      <br/>
+      Photon Code &middot; Node.js &middot; d3 &middot; Paper.js &middot; TinkerCAD &middot; 123D Design &middot; 123D Make
+    </p>
+
+    <p>
+      <strong>Hardware &amp; Tools</strong>
+      <br/>
+      Photon &middot; 3D printer &middot; laser cutter
+    </p>
+
+    <p>
+      <strong>Skills Used</strong>
+      <br/>
+      circuit building &middot; prototyping &middot; 3D modeling
+    </p>
+  </div>
+
+  <hr>
+
+  <div>
+    <p>
+      This was a multi-stage project for exploring IoT interactions. Ultimately I created a semi-automated plant watering device.
+    </p>
+
+    <img src="../assets/plant-waterer/overall-container.png" class="img-responsive center-block project-img">
+
+    <p>
+      I first designed a circuit consisting of a Photon microcontroller and sensors for detecting the moisture level in soil and the amount of light a plant was receiving. A motor was also connected to the circuit, which could be activated to give water to the plant via tipping a water-filled container. The Photon provided a wi-fi connection for passing the sensor information to a web application I later developed.
+    </p>
+
+    <img src="../assets/plant-waterer/plantcare-setup.png" class="img-responsive center-block project-img">
+
+    <p>
+      The web app displays a graph for the current light conditions and a plant graphic for relaying the amount of water the plant currently has: the more droopy the plant, the less water. By pressing a button in the web app, the user could then turn on the circuit motor and remotely water their plant.
+    </p>
+
+    <img src="../assets/plant-waterer/hows-my-plant.png" class="img-responsive center-block project-img">
+
+    <p>
+      Eventually I designed a container for the circuit in the shape of the grass-type pokemon, Bulbasaur. The model was modified from a <a href="http://www.thingiverse.com/thing:327753">previously existing design on Thingiverse</a> using two 3D modeling programs (TinkerCAD and 123D Design). Then with the help of 123D Make, I turned the model into multiple layers to be laser cut, and then assembled the container. The water container was redesigned in the shape of the cloud, to evoke the idea of a rain cloud watering the plant. This structure was also created in 123D Design, and then 3D printed.
+    </p>
+
+    <div class="row text-center">
+      <div class="col-md-6">
+        <img src="../assets/plant-waterer/container-front.png" class="img-responsive center-block">
+      </div>
+      <div class="col-md-6">
+        <img src="../assets/plant-waterer/watering-dish.png" class="img-responsive center-block">
+      </div>
+    </div>
+
+    <h3 class="text-center"><a href="https://github.com/amandayung/hcin720" target="_blank">[See full documentation and source code: Assignments 2 and 3]</a></h3>
+    <br/>
+  </div>
+
+</div>
+
+</body>
+
+</html>

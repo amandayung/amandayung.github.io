@@ -80,7 +80,7 @@ nav {
   width: 100%;
   opacity: 0;
   transition: .25s ease;
-  background-color: #FFFFFF;
+  background-color: #000;
 }
 
 .img-preview .overlay {
@@ -90,7 +90,8 @@ nav {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .2s ease;
+  transition: .25s ease;
+  background-color: #FFFFFF;
 }
 
 .img-preview {
@@ -103,14 +104,14 @@ nav {
 }
 
 .img-preview:hover .overlay-soon {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .img-preview:hover .overlay {
-  opacity: 1;
+  opacity: 0.7;
 }
 
-.coming-soon {
+.overlay-text {
   font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
   font-weight: 900;
@@ -122,6 +123,20 @@ nav {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
+.coming-soon {
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #FFF;
+  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 
 /***specific projects' pages***/
 

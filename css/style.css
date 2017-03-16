@@ -4,9 +4,9 @@ html. body {
 	height: 100%;
 }
 
-p, div {
+p {
 	font-family: 'Nunito Sans', sans-serif;	
-	font-size: 1.05em;
+	font-size: 1.1em;
 }
 
 h3, h4 {

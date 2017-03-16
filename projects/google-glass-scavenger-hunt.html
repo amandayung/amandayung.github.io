@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+  <title>Amanda Yung</title>
+
+  <!-- styling -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700,900|Nunito+Sans:400,700,900" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+
+</head>
+
+ <body>
+  <!-- navigation -->
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand" href="../index.html"><strong>Amanda Yung</strong></a>
+      </div>
+
+      <div class="navbar-collapse collapse" id="menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li  class="active"><a href="../projects.html">Projects</a></li>
+          <li><a href="../cv.html">CV</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h3>Google Glass Scavenger Hunt</h3>
+    <p><em>Wearable &amp; Android App</em></p>
+
+    <div class="project-specs">
+
+      <p>
+        <strong>Software</strong>
+        <br/>
+        Java &middot; Android SDK &middot; Google Glass API &middot; R
+      </p>
+
+      <p>
+        <strong>Hardware</strong>
+        <br/>
+        Android Nexus &middot; Google Glass
+      </p>
+
+      <p>
+        <strong>Skills Used</strong>
+        <br/>
+        wireframing &middot; API integration &middot; experiment design &middot; conducting a user study
+      </p>
+    </div>
+
+    <hr>
+
+    <div>
+      <div class="clearfix">
+        <img src="../assets/scavenger-hunt/hunt-icon.png" class="img-responsive rounded pull-left project-icon">
+        <p>
+          For this four-person group project, we developed a Google Glass scavenger hunt app, intended to be used by freshmen or transfer students learning about their new college campus. Users of the app were presented with clues about different locations around campus and needed to physically search for the buildings. Their location was tracked via GPS to provide them with real-time feedback. We also developed the app for an Android phone and conducted a user study to compare user preferences between the Glass version and the phone version.
+        </p>
+      </div>
+
+      <p>
+        I was lead developer for the Glass version of the app. During the project, I learned a lot about the Google Glass API and how to design an interface for a head-up display. Wireframing the task flow was an important step before actually coding up the app. This step also helped with designing the Android phone version to ensure the two versions varied as little as possible.
+      </p>
+
+      <img src="../assets/scavenger-hunt/google-glass-wireframing.png" class="img-responsive center-block project-img" style="width:100%">
+
+      <p>
+        I also assisted with development for the phone app, particularly for determining how to scan QR codes that could bring up information relevant to our scavenger hunt. The QR code scanning feature was needed for both versions of the app: when participants reached the current hinted location in the scavenger hunt, they would need to scan the nearby QR code to confirm they found the spot. The app could then move them onto the next location.
+      </p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../assets/scavenger-hunt/qr-scan-phone.png" class="img-responsive center-block">
+        </div>
+        <div class="col-md-6">
+         <img src="../assets/scavenger-hunt/qr-scan-glass.png" class="img-responsive center-block">
+        </div>
+      </div>
+
+      <br/>
+
+      <p> For the user study, we recruited 8 participants. We paired up our participants and assigned each team a set of devices: either they would be the Google Glass team or the Android phone team. We then had each team complete our scavenger hunt using the app, where they needed to find 9 locations to find across campus. The game was timed and scored: the fewer clues used to find a location, the more points scored. We had team members follow each of the groups in order to observe user interactions. After completing the scavenger hunt or running out of time, we then had participants also fill out a post-game survey to gather more data about their experiences.
+      </p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../assets/scavenger-hunt/android-interaction.png" class="img-responsive center-block">
+        </div>
+        <div class="col-md-6">
+         <img src="../assets/scavenger-hunt/glass-interaction.png" class="img-responsive center-block">
+        </div>
+      </div>
+
+      <br/>
+
+      <p>
+      Overall, participants enjoyed the scavenger hunt app both on Glass and on an Android phone. The main difference was the difficulty in learning how to use the Glass, as our participants had never used one before. We found that our app was successful in teaching people about our university's campus, and that it was also an enjoyable activity.
+      </p>
+
+        <img src="../assets/scavenger-hunt/quis-results.png" class="img-responsive center-block project-img" style="width:100%">
+        <img src="../assets/scavenger-hunt/other-results.png" class="img-responsive center-block project-img" style="width:100%">
+
+      <p>
+        While our study did not distinguish one interface as more preferred than the other, it did allow us to experiment with unique applications for the Google Glass and explore the potential for future wearable devices.
+      </p>
+
+      <h3 class="text-center"><a href="https://github.com/amandayung/ScavengerHuntGlass" target="_blank">[See the full report and source code]</a></h3>
+
+      <br/>
+
+    </div>
+
+  </div>
+
+  </body>
+
+</html>

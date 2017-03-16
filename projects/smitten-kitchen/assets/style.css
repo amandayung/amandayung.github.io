@@ -1,0 +1,415 @@
+/*default mobile size will be based on 320px -- the size of an iPhone screen*/
+
+html, body {
+padding: 0;
+margin: 0;
+width: 100%;
+font-size: 100%;
+}
+
+/*** Begin Typography & Colors ***/
+body {
+	font-family: Tahoma,Arial, Verdana,sans-serif; 
+	color: #222; margin:0 auto; padding: 0;text-align:left; background: #fff none;}
+
+/*** Set Layout Section ***/
+
+#page,#header,#content,#sidebar,#aside { 
+	overflow:hidden; 
+	display:block;}
+	
+#page {
+	background:#fff ;
+	width: 95%;
+	margin-top: 4em;
+}
+
+
+/*** Header styling ***/
+
+#header {
+padding-left: 0.625em;
+padding-bottom: 0.5em;
+color: #656A7B;
+width: 97%;
+position: absolute; /*header is positioned at the top of the page*/
+top: 0;
+left:0;
+background-color: #fff;
+border-bottom: 2px dashed #656A7B;
+margin-bottom: 0.5em;
+overflow: hidden;
+}
+
+/*align logo with site title text and navigation arrows*/
+#logo {
+	padding-bottom: none;
+	vertical-align: text-bottom;
+}
+
+/*navigation sidebar arrows*/
+#collapse-arrow, #expand-arrow {
+	font-size: 1.5em;
+	padding-bottom: 0;
+	margin: 0;
+}
+
+	#collapse-arrow {
+		margin-right: 0.5em;
+	}
+
+/*hide title for mobile version*/
+#title {
+	display: none;
+}
+
+/*put the search box in the top right corner*/
+#cse-search-box {
+	margin: 0.5em 1em 0 0;
+	float: right;
+}
+
+
+/*** Link styling ***/
+a {
+	color: #656A7B;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #6C162C;
+}
+
+
+/*** Content Section ***/
+
+#content {
+	padding:0; 
+	margin:1em;
+	display: block; 
+	font-size: 0.8em;
+}
+
+#content .entry {
+	text-align:justify;
+}
+
+#content .date{
+	text-transform:uppercase;
+	color: #999;
+	font-size: 0.8em;
+	margin-top:2em;
+}
+        
+/*remove extra spacing for first post*/
+#content .post:first-child .date {
+	margin-top: 0;
+}
+
+#content recipe {
+	text-transform:none;
+	color: #666;
+	font-size: 0.6875em;
+}
+
+#content blockquote {
+	text-align:justify;
+	border-left: 1px solid #d9def3;
+	padding-left: .8em;
+}
+
+#content h2 {
+	font:1.3em Tahoma,Arial; 
+	padding-bottom:0.0625em;
+	margin: 0.125em 0;
+}
+
+#content h2.pagetitle {
+	font: bold 0.75em Tahoma,Arial; 
+	color:#656A7B;
+	border-bottom: 1px dashed #d9def3;
+}
+ 
+#content h3 {
+	font-size:0.75em;
+	font-weight: bold;
+	color:#676;
+}
+
+#content h4 {
+	font-size: 0.625em
+}
+
+#content h5 {
+	font-size: 0.625em;
+	text-align: center;
+	color: #666;
+	padding-top:0;
+	margin-bottom:0;
+}
+
+
+/*** Image formatting ***/
+	
+.main-img, .recipe-img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+/*adjust image size so that most of the container is filled lengthwise*/
+/*this one is for 2 images in a row*/
+.img-group-2 {
+max-width: 48%;
+height: auto;
+display: inline;
+}
+
+/*this one is for 3 images in a row*/
+.img-group-3, .extra-img {
+max-width: 32%;
+height: auto;
+display: inline;
+}
+
+/*center the images with the rest of the content*/
+.img-wrapper {
+text-align: center;
+}
+
+
+/*** Menu and Navigation ***/
+
+/*navigation side bar and the menu items*/
+#sidebar { 
+	margin-right: 1em; 
+	padding: 0em 0em;
+	background-color: #fff;
+	font-size: 1.3em;
+	display: none; /*hide the nav sidebar initially for mobile*/
+}
+
+#sidebar ul {
+	list-style: none;	
+	margin: 0;	
+	padding: 0 1em;
+}
+
+#sidebar ul li {	
+	margin: 0;
+	padding: 0.5em 0.25em;
+	border-top: 1px dashed #d9def3;
+	font:bold 1em; 
+	color:#222;
+}
+	
+/*remove extra line above first menu title item*/
+#sidebar li:first-child {
+	border-top: none;
+}
+
+/*the above css removes it from all the first li children as well, 
+so add it back to them*/
+#sidebar li ul li:first-child {
+	border-top: 1px dashed #d9def3;
+}
+	
+#sidebar li ul{
+	list-style: none;
+	margin: 0;
+	padding: 0.375em 0 0.125em;
+}
+
+#sidebar li ul li{
+	margin: 0;
+	padding: 0.25em 1em;
+	border-top: 1px dashed #d9def3;
+	font:normal 0.8em Tahoma;
+}
+
+#sidebar p {
+	font:0.6875em Tahoma;
+}
+
+#sidebar img {
+	border: none;
+}
+
+/*additional navigation using images*/
+#aside {
+	width: 100%;  
+	text-align: center; 
+	margin-top: 1em;    
+}
+
+#extra-nav {
+	text-align: center; 
+}
+        
+#footer {
+text-transform:uppercase;
+line-height:1em;
+font-size: 0.625em; 
+color: #656A7B;
+}
+
+#footer a {
+	text-decoration:none;
+}
+
+
+
+/* Comment Styling */
+#comment {
+	width:95%;
+}
+
+cite {
+	font-size: 1em;
+	font-weight:bold; 
+	font-style:normal;
+}
+
+.commentbody {
+	color: #222; 
+	font-size: 0.9em; 
+	margin: 0.3125em 0 0.3125em 0;
+	padding: 0.625em 0.9375em 0.625em 1.875em;	
+	background: #fff;	
+	border-top: 1px dashed #d9def3; 
+	position: relative;
+}
+
+.commentbody.highlighted {
+	background: #eee;	
+}
+
+.commentbody p { 
+	margin:0.3125em 0 0 0;}
+
+.commentlink {	
+	font-size: 0.9em;
+}
+
+.commentlist {	
+	list-style: none; 
+	margin:0; padding:0;}
+
+.commentcount {	
+	font: bold 1.5em tahoma,sans-serif;
+	color: #ddd;	
+	float: left;
+    }
+    
+    .commenttext {
+    margin-left: 3em;
+    }
+
+.highlighted .commentcount {	
+	color: #aaa;	
+}
+    
+
+/*** Other Parts ***/
+
+img {
+	padding: 0.0625em;
+	border: none;
+}
+
+/*text link navigation between pages*/
+.navigation {
+	font-size: 0.8em;	
+	padding-bottom: 1em;
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.alignright {
+	float: right;
+	margin-top: -1px; 
+	text-align: right;
+}
+
+/*extra links under the posts*/
+p.postmetadata {
+	color: #999; 
+	background: #ffffff; 
+	border-top: 1px dashed #d9def3; 
+	border-bottom: 1px dashed #d9def3;
+	padding: 0.1875em;
+	text-align:right; 
+	margin: 0;
+}
+
+
+/*Media Type Checks*/
+
+/*550px / 16px */
+@media all and (min-width: 34.375em) {
+/*now the nav sidebar should be visible at all times*/
+
+	/*hide navigation arrows*/
+	#expand-arrow, #collapse-arrow {
+		display: none;
+	}
+	
+	/*reformat the page to be a table-like layout,
+	so the content is now to the side of the nav sidebar*/
+	#page {
+		display: table;
+		table-layout: fixed;
+	}
+	
+	#sidebar {
+	display: block;
+	font-size: 0.95em;
+	}
+	
+	#content {
+		display: table-cell;
+		width: 70%;
+	}
+	
+	/*add a full title to the header*/
+	#title {
+		display: inline;
+		font-size: 1.5em;
+		margin-left: 0.5em;
+	}
+
+}
+
+/* 1200px / 16px*/
+@media all and (min-width: 75em) {
+/*move the extra navigation items at the bottom now to the right side of the page*/
+	
+	/*set the min-width so the nav sidebar can't shrink 
+	with the extra content to its side*/
+	#sidebar {
+		display: block;
+		min-width: 17em;
+		margin-right: 3em; 
+	}
+
+	/*make the content section slightly narrower to fit the extra navigation icons */
+	#content {
+		display: table-cell;
+		width: 60%;
+		margin: auto;
+		padding-right: 3em;
+	}
+
+	/*move the icons to the right of the content*/
+	#extra-nav {
+		display: table-cell;
+		width: 15%;
+		padding-left: 1em;
+	}
+
+}
+
